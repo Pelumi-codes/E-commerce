@@ -22,7 +22,7 @@ const Wrapper = styled.button`
 
   .text {
     font-size: 1.6rem;
-    font-family: Eudoxus Sans, sans-serif;
+
     font-weight: bold;
     line-height: 2rem;
     letter-spacing: 0.075rem;
@@ -30,6 +30,7 @@ const Wrapper = styled.button`
     padding: 14px, 12px, 14px, 12px;
   }
 `;
+
 const Button = ({
   className,
   height,

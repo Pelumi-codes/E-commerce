@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Eudoxus Sans Medium";
+  src: url("./fonts/EudoxusSans-Medium.woff2") format("woff2"),
+    url("./fonts/EudoxusSans-Medium.woff") format("woff"),
+    url("./fonts/EudoxusSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Eudoxus Sans ExtraBold";
+  src: url("./fonts/EudoxusSans-ExtraBold.woff2") format("woff2"),
+    url("./fonts/EudoxusSans-ExtraBold.woff") format("woff"),
+    url("./fonts/EudoxusSans-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --primary: #0000fe;
   --primary_dark: #002266;
@@ -9,15 +29,9 @@
   --warning: #ffcc00;
   --danger: #a10000;
   --text: #1a1a1a;
-  --grey_1: #8d9091;
-  --grey_2: #aaaaaa;
-  --grey_3: #cccccc;
-  --grey_4: #fafafa;
   --white: #ffffff;
-  --font_black: "Circular Std Black";
-  --font_regular: "Circular Std Book";
-  --font_medium: "Circular Std Medium";
-  --font_bold: "Circular Std Bold";
+  --font_medium: "Eudoxus Sans Medium";
+  --font_extra_bold: "Eudoxus Sans ExtraBold";
   --filter_primary: brightness(0%) saturate(100%) invert(9%) sepia(82%)
     saturate(7439%) hue-rotate(219deg) brightness(79%) contrast(101%);
   --filter_primary_dark: brightness(0%) saturate(100%) invert(7%) sepia(59%)
@@ -45,9 +59,9 @@ body {
   color: var(--text);
   margin: 0;
   overflow: scroll;
-  font-family: var(--font_regular), -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--font_medium), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 450;
@@ -58,4 +72,386 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1677bd;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+select {
+  appearance: none;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+::selection {
+  background: #0000fe; /* WebKit/Blink Browsers */
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #0000fe; /* Gecko Browsers */
+  color: #ffffff;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  overflow: auto;
+  z-index: 5;
+}
+
+/* Colors */
+.colorWhite {
+  color: var(--white);
+}
+
+.backdrop.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.alignEnd {
+  align-items: flex-end;
+}
+
+.alignStart {
+  align-items: flex-start;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifySpaceBetween {
+  justify-content: space-between;
+}
+
+.justifySpaceAround {
+  justify-content: space-around;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textUnderline {
+  text-decoration: underline;
+}
+
+.textUpperCase {
+  text-transform: uppercase;
+}
+
+.textCapitalize {
+  text-transform: capitalize;
+}
+
+.textBold {
+  font-weight: 700;
+}
+
+.displayLarge {
+  font-family: var(--font_medium);
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 108px;
+  letter-spacing: 0px;
+}
+
+.displayLargeBold {
+  font-family: var(--font_extra_bold);
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 108px;
+  letter-spacing: 0px;
+}
+
+.displayMedium {
+  font-family: var(--font_medium);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.displayMediumBold {
+  font-family: var(--font_extra_bold);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.displaySmall {
+  font-family: var(--font_medium);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.displaySmallBold {
+  font-family: var(--font_extra_bold);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.textLarge {
+  font-family: var(--font_medium);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.textLargeBold {
+  font-family: var(--font_extra_bold);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.textMedium {
+  font-family: var(--font_medium);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.textMediumBold {
+  font-family: var(--font_extra_bold);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0px;
+}
+
+.textSmall {
+  font-family: var(--font_medium);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.textSmallBold {
+  font-family: var(--font_extra_bold);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.textXSmall {
+  font-family: var(--font_medium);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0px;
+}
+
+.container {
+  max-width: 100vw;
+  padding: 0 7.2rem;
+}
+
+.section {
+  height: 768px;
+}
+
+@media screen and (max-width: 768px) {
+  .displayLarge {
+    font-family: var(--font_medium);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: 0px;
+  }
+
+  .displayLargeBold {
+    font-family: var(--font_extra_bold);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0px;
+  }
+
+  .displayMedium {
+    font-family: var(--font_medium);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0px;
+  }
+
+  .displayMediumBold {
+    font-family: var(--font_extra_bold);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+  }
+
+  .displaySmall {
+    font-family: var(--font_medium);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+  }
+
+  .displaySmallBold {
+    font-family: var(--font_extra_bold);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+  }
+
+  .textLarge {
+    font-family: var(--font_medium);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0px;
+  }
+
+  .textLargeBold {
+    font-family: var(--font_extra_bold);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+  }
+
+  .textMedium {
+    font-family: var(--font_medium);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0px;
+  }
+
+  .textMediumBold {
+    font-family: var(--font_extra_bold);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0px;
+  }
+
+  .textSmall {
+    font-family: var(--font_medium);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+  }
+
+  .textSmallBold {
+    font-family: var(--font_extra_bold);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+  }
+
+  .container {
+    padding: 0 2.4rem;
+  }
 }
