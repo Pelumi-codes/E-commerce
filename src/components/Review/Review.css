@@ -1,0 +1,23 @@
+/* .reviewWrapper {
+  height: 142.8rem;
+} */
+
+.ReviewCaption {
+  width: 60%;
+}
+
+.stars {
+  margin: 2.6rem 0;
+  width: 12.4rem;
+}
+.reviewsRatings {
+  padding-left: 31.4rem;
+}
+
+.reviewNames {
+  margin-left: 2.4rem;
+}
+
+.paragraphReview {
+  padding-right: 31.5rem;
+}

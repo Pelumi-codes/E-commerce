@@ -17,7 +17,7 @@ const Header = ({ headerCaption }) => {
         </div>
         <div>
           <Link to="/get-started" className="textLargeBold getStarted">
-            Get started
+            Get Started
           </Link>
         </div>
       </div>

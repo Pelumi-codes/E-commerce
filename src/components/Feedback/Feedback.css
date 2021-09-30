@@ -1,0 +1,11 @@
+.feedbackWrapper{
+    height: 36rem;
+}
+.textFeedback{
+    margin: 9.6rem 26.8rem 4.8rem 27.4rem;
+}
+.logos {
+    margin-bottom:9.6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

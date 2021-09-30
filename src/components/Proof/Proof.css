@@ -1,0 +1,43 @@
+.proofWrapper{
+background-color: #ffffff;
+position:relative;
+}
+
+.leadText{
+background-color: #FFFAF2;
+width:65%;
+position:relative;
+}
+
+.leadProof{
+width:30%;
+}
+
+.miniCard {
+height: 36.1rem;
+width: 36rem;
+margin-top: 3rem;
+background-color: #ffffff;
+}
+
+.textLarge {
+margin-bottom:15.5rem;
+width:70%;
+}
+  
+.boostText {
+margin-top: 22.2rem;
+color: #000066;
+text-align: right;
+positive:absolute;
+
+}
+.button-lead {
+margin:4.8rem 0 22.2rem 0;
+positive:absolute;
+}
+
+.leadButton{
+padding-right:7.2rem;
+width:50%;
+  }

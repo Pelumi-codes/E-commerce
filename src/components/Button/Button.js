@@ -15,19 +15,18 @@ const Wrapper = styled.button`
   height: ${(props) =>
     props.small ? "4.8rem" : props.big ? "5.6rem" : "4.8rem"};
   width: ${(props) =>
-    props.small ? "33rem" : props.big ? "12rem" : "18.4rem"};
+    props.small ? "33rem" : props.big ? "11.4rem" : "18.4rem"};
   background-color: ${(props) =>
     props.white ? "var(--white)" : "var(--primary)"};
   color: ${(props) => (props.white ? "var(--primary)" : "var(--white)")};
 
   .text {
     font-size: 1.6rem;
-
     font-weight: bold;
     line-height: 2rem;
-    letter-spacing: 0.075rem;
+    white-space: no-wrap;
     text-align: center;
-    padding: 14px, 12px, 14px, 12px;
+    padding: 18px 12px 18px 12px;
   }
 `;
 

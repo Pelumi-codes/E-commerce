@@ -21,29 +21,34 @@ import BrandOne from "../Images/BrandOne.svg";
 import ReadArrow from "../Images/ReadArrow.svg";
 import Line from "../Images/Line.svg";
 import Header from "./Header/Header";
+import Offer from "./Offer/offer";
+import Strategy from "./Strategy/Strategy";
+import Proof from "./Proof/Proof";
+import Review from "./Review/Review";
+import Process from "./Process/Process";
+import Figures from "./Figures/Figures";
+import Feedback from "./Feedback/Feedback";
+import Brands from "./Brands/Brands";
 
 function Home() {
   return (
     <>
       <Header headerCaption={`Fuel your online\nstore with\nincreased `} />
-      <div className="container-row ">
-        <div className="row-two">
-          <div className="paragraph-button">
-            <p className="body-text">
-              We help E-commerce businesses and a number of other enterprises
-              across many sectors amplify their digital presence, get more
-              profitable conversions and boost their business revenue.
-            </p>
-            <Button className="button-text" text="Get Started" big />
-          </div>
-          <div className="image">
-            <>
-              <img src={CardTwo} alt="A laptop" />
-            </>
-          </div>
-        </div>
-      </div>
-      <section className="text-section">
+      <Offer
+        offerCaption={` We help E-commerce businesses\nand a number of other\nenterprises
+      across many sectors\namplify their digital presence,\nget more
+      profitable conversions\nand boost their business\nrevenue.`}
+      />
+      <Strategy strategyText={`Strategy Process\nImplementation Results`} />
+      <Proof boostText={` We can similarly help\nyou boost your leads &\nconvert your
+      undecided\nprospects into active\nbuyers.`} />
+      <Review /> 
+      <Process />
+      <Figures />
+      <Feedback />
+      <Brands />
+
+      {/* <section className="text-section">
         <img src={OrnamentBlue} alt="Animation" className="blue-ornament" />
         <img src={OrnamentOrange} alt="Animation" className="orange-ornament" />
         <div className="text-arrow">
@@ -100,8 +105,8 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <div className="lead-text-button ">
+      </section> */}
+      {/* <div className="lead-text-button ">
         <div className="text-lead">
           <h2 className="text-mini">Proof of what we do</h2>
           <div className="card mini-card"></div>
@@ -117,19 +122,19 @@ function Home() {
           </p>
           <Button className="button-lead" text="Yes please, I want in!" />
         </div>
-      </div>
-      <div className="lead-butn">
+      </div> */}
+      {/* <div className="lead-butn">
         <p className="ld-text">
           We can similarly help you boost your leads and convert your undecided
           prospects into active buyers.
         </p>
         <Button className="butn-lead" text="Yes please, I want in!" />
-      </div>
-      <div className="container-reviews">
+      </div> */}
+      {/* <div className="container-reviews">
         <p className="review-paragraph">
           Businesses and clients who trusted us to skyrocket their metrics
-        </p>
-        <div className="reviews-ratings">
+        </p> */}
+        {/* <div className="reviews-ratings">
           <div className="five-stars">
             <div className="logo-review">
               <div>
@@ -191,11 +196,11 @@ function Home() {
               affordable housing solution sector."
             </p>
           </div>
-        </div>
-      </div>
-      <div className="team-services">
-        <h1 className="team-process">Our Process</h1>
-        <div className="service-process">
+        </div> */}
+      {/* </div> */}
+      {/* <div className="team-services"> */}
+        {/* <h1 className="team-process">Our Process</h1> */}
+        {/* <div className="service-process">
           <div className="team-work-img">
             <img src={Team} alt="Team work" className="team" />
           </div>
@@ -342,9 +347,9 @@ function Home() {
             </div>
             <Button className="button-bullet" text="Get Started" big white />
           </div>
-        </div>
-      </div>
-      <div className="container-figures">
+        </div> */}
+      {/* </div> */}
+      {/* <div className="container-figures">
         <div className="text-fig">
           <div className="text-center-fig">
             <h1 className="figures-sign">189,000+</h1>
@@ -373,8 +378,8 @@ function Home() {
             <h4 className="text-figure">connections</h4>
           </div>
         </div>
-      </div>
-      <div className="container-logo">
+      </div> */}
+      {/* <div className="container-logo">
         <p className="text-pg">
           We've scored amazing marketing results for a number of brands across
           different industries in 4 different continents
@@ -411,8 +416,8 @@ function Home() {
             <img src={BrandOne} alt="logo" className="brd-lg" />
           </div>
         </div>
-      </div>
-      <div className="container-percentage">
+      </div> */}
+      {/* <div className="container-percentage">
         <p className="paragraph-percent">
           See how we boosted Heroshe’s (a US-to-Nigeria shipping company) web
           traffic by 1348%
@@ -446,7 +451,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="container-row-base">
         <div className="text-center-btn">
           <p className="base-text">

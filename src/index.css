@@ -188,6 +188,10 @@ ul {
   justify-content: space-around;
 }
 
+.gridColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .cursorPointer {
   cursor: pointer;
 }
@@ -215,6 +219,9 @@ ul {
 .textBold {
   font-weight: 700;
 }
+.paddingTop {
+  margin-top: 9.6rem;
+}
 
 .displayLarge {
   font-family: var(--font_medium);
@@ -224,7 +231,15 @@ ul {
   line-height: 108px;
   letter-spacing: 0px;
 }
-
+.displayLargeTextBold {
+  font-family: var(--font_extra_bold);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 72px;
+  letter-spacing: 0px;
+  text-align: right;
+}
 .displayLargeBold {
   font-family: var(--font_extra_bold);
   font-size: 72px;
@@ -232,6 +247,35 @@ ul {
   font-weight: 700;
   line-height: 108px;
   letter-spacing: 0px;
+}
+.displayTextSmallBold {
+  font-family: var(--font_medium);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.displayLargeExtraBold {
+  font-family: var(--font_medium);
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 4.8rem;
+  letter-spacing: 0em;
+  /* text-align: left; */
+}
+
+.displayExtraLargeBold {
+  font-family: var(--font_extra_bold);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  /* text-align: left; */
 }
 
 .displayMedium {
@@ -269,7 +313,15 @@ ul {
   line-height: 48px;
   letter-spacing: 0px;
 }
-
+.textExtraBold {
+  font-family: var(--font_extra_bold);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 .textLarge {
   font-family: var(--font_medium);
   font-size: 24px;
@@ -292,8 +344,16 @@ ul {
   font-family: var(--font_medium);
   font-size: 18px;
   font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+.textMediumHeight {
+  font-family: var(--font_medium);
+  font-size: 18px;
+  font-style: normal;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 27px;
   letter-spacing: 0px;
 }
 
@@ -305,7 +365,15 @@ ul {
   line-height: 27px;
   letter-spacing: 0px;
 }
-
+.textBoldSmall {
+  font-family: var(--font_extra_bold);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 .textSmall {
   font-family: var(--font_medium);
   font-size: 16px;
@@ -315,7 +383,17 @@ ul {
   letter-spacing: 0px;
 }
 
-.textSmallBold {
+.textSmallSize {
+  font-family: var(--font_medium);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.textSmallBoldWeight {
   font-family: var(--font_extra_bold);
   font-size: 16px;
   font-style: normal;
@@ -324,13 +402,24 @@ ul {
   letter-spacing: 0px;
 }
 
+.textSmallFontMedium {
+  font-family: var(--font_medium);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 .textXSmall {
   font-family: var(--font_medium);
-  font-size: 14px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 21px;
+  font-weight: 800;
+  line-height: 36px;
   letter-spacing: 0px;
+  text-align: center;
 }
 
 .container {
@@ -340,6 +429,9 @@ ul {
 
 .section {
   height: 768px;
+}
+.sectionLarge {
+  height: 900px;
 }
 
 @media screen and (max-width: 768px) {
