@@ -132,7 +132,6 @@
 .button-text {
   width: 80%;
   height: 5.6rem;
-  margin: 3rem 0 17.6rem 0;
 }
 .text-body-section {
   width: 44.4rem;
@@ -733,7 +732,6 @@
     height: 5.6rem;
     align-items: center;
     justify-content: center;
-    margin: 19rem 0rem 19.4rem 10rem;
   }
   .text-section {
     width: 90%;

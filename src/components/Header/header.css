@@ -41,6 +41,10 @@
   height: 18.6rem;
 }
 
+.headerWrapper .btn {
+  margin-top: 4.8rem;
+}
+
 @media screen and (max-width: 768px) {
   .headerWrapper {
     background-image: url("../../Images/bgsmall.svg");
@@ -69,5 +73,10 @@
   .headerWrapper .ratings,
   .headerWrapper .totalSales {
     display: none;
+  }
+
+  .headerWrapper .btn {
+    margin: auto;
+    margin-top: 4.8rem;
   }
 }

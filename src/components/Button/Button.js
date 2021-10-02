@@ -14,8 +14,7 @@ const Wrapper = styled.button`
   outline: none;
   height: ${(props) =>
     props.small ? "4.8rem" : props.big ? "5.6rem" : "4.8rem"};
-  width: ${(props) =>
-    props.small ? "33rem" : props.big ? "11.4rem" : "18.4rem"};
+  width: max-content;
   background-color: ${(props) =>
     props.white ? "var(--white)" : "var(--primary)"};
   color: ${(props) => (props.white ? "var(--primary)" : "var(--white)")};

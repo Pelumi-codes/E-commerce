@@ -35,11 +35,7 @@ const Header = ({ headerCaption }) => {
         We can help you skyrocket your customer base with an online marketing
         strategy tailored just for your business.
       </p>
-      <Button
-        className="header-button"
-        text="Request a free consultation"
-        small
-      />
+      <Button className="btn" text="Request a free consultation" small />
 
       <img src={ratings} alt="Ratings" className="ratings" />
       <img src={graph} alt="Graph" className="totalSales" />

@@ -20,7 +20,7 @@
 
 :root {
   --primary: #0000fe;
-  --primary_dark: #002266;
+  --primary_dark: #000066;
   --secondary: #4655c2;
   --navy: #001a4d;
   --tint: #ccd6eb;
@@ -38,6 +38,8 @@
     saturate(7208%) hue-rotate(214deg) brightness(92%) contrast(106%);
   --filter_text: brightness(0%) saturate(100) invert(0%) sepia(3%)
     saturate(1462%) hue-rotate(60deg) brightness(84%) contrast(80%);
+  --filter_grey_4: brightness(0%) saturate(100) invert(95%) sepia(0%)
+    saturate(63%) hue-rotate(194deg) brightness(78%) contrast(102%);
 }
 
 * {
@@ -58,7 +60,6 @@ html {
 body {
   color: var(--text);
   margin: 0;
-  overflow: scroll;
   font-family: var(--font_medium), -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
@@ -192,6 +193,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .cursorPointer {
   cursor: pointer;
 }
@@ -202,6 +204,14 @@ ul {
 
 .textCenter {
   text-align: center;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
 }
 
 .textUnderline {
@@ -231,15 +241,7 @@ ul {
   line-height: 108px;
   letter-spacing: 0px;
 }
-.displayLargeTextBold {
-  font-family: var(--font_extra_bold);
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 72px;
-  letter-spacing: 0px;
-  text-align: right;
-}
+
 .displayLargeBold {
   font-family: var(--font_extra_bold);
   font-size: 72px;
@@ -247,35 +249,6 @@ ul {
   font-weight: 700;
   line-height: 108px;
   letter-spacing: 0px;
-}
-.displayTextSmallBold {
-  font-family: var(--font_medium);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-.displayLargeExtraBold {
-  font-family: var(--font_medium);
-  font-size: 3.6rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 4.8rem;
-  letter-spacing: 0em;
-  /* text-align: left; */
-}
-
-.displayExtraLargeBold {
-  font-family: var(--font_extra_bold);
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
-  letter-spacing: 0em;
-  /* text-align: left; */
 }
 
 .displayMedium {
@@ -313,15 +286,7 @@ ul {
   line-height: 48px;
   letter-spacing: 0px;
 }
-.textExtraBold {
-  font-family: var(--font_extra_bold);
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 64px;
-  letter-spacing: 0em;
-  text-align: left;
-}
+
 .textLarge {
   font-family: var(--font_medium);
   font-size: 24px;
@@ -348,14 +313,6 @@ ul {
   line-height: 26px;
   letter-spacing: 0px;
 }
-.textMediumHeight {
-  font-family: var(--font_medium);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 27px;
-  letter-spacing: 0px;
-}
 
 .textMediumBold {
   font-family: var(--font_extra_bold);
@@ -365,15 +322,7 @@ ul {
   line-height: 27px;
   letter-spacing: 0px;
 }
-.textBoldSmall {
-  font-family: var(--font_extra_bold);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 40px;
-  letter-spacing: 0em;
-  text-align: left;
-}
+
 .textSmall {
   font-family: var(--font_medium);
   font-size: 16px;
@@ -383,18 +332,8 @@ ul {
   letter-spacing: 0px;
 }
 
-.textSmallSize {
+.textSmallBold {
   font-family: var(--font_medium);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 36px;
-  letter-spacing: 0px;
-  text-align: left;
-}
-
-.textSmallBoldWeight {
-  font-family: var(--font_extra_bold);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -402,24 +341,13 @@ ul {
   letter-spacing: 0px;
 }
 
-.textSmallFontMedium {
-  font-family: var(--font_medium);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
 .textXSmall {
   font-family: var(--font_medium);
-  font-size: 24px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 800;
-  line-height: 36px;
+  font-weight: 500;
+  line-height: 24px;
   letter-spacing: 0px;
-  text-align: center;
 }
 
 .container {
@@ -429,9 +357,12 @@ ul {
 
 .section {
   height: 768px;
+  overflow: hidden;
 }
+
 .sectionLarge {
   height: 900px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {

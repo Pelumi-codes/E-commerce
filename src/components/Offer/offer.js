@@ -5,18 +5,19 @@ import Button from "components/Button/Button";
 
 const offer = ({ offerCaption }) => {
   return (
-    <div className="offerWrapper container section flexRow justifySpaceBetween">
-      <div className="offerCaption displayExtraLargeBold">
-        {offerCaption.split(`\n`).map((text) => (
+    <div className="offerWrapper container section flexRow alignCenter justifySpaceBetween">
+      <div className="offerCaption">
+        {/* {offerCaption.split(`\n`).map((text) => (
           <span>
             {text}
             <br />
           </span>
-        ))}
+        ))} */}
+        <h2 className="displaySmallBold">{offerCaption}</h2>
         <Spacer y={2.4} />
-        <Button className="button-text" text="Get Started" big />
+        <Button className="btn" text="Get Started" big />
       </div>
-      <div className="offerImage flexRow alignEnd">
+      <div className="offerImage">
         <img src={CardTwo} alt="A laptop" />
       </div>
     </div>

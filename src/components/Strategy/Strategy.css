@@ -2,43 +2,59 @@
   background-color: #fff;
   position: relative;
   z-index: 2;
-  height:900px;
+  height: 900px;
+  padding-top: 9.6rem;
 }
 
-.arrows {
+.strategyWrapper .strategyWrapper .arrows {
   width: 7.2rem;
   height: 2.4rem;
 }
 
-.img-card {
-  width: 20em;
-  height: 18rem;
+/* .strategyWrapper .track {
+  position: relative;
+  z-index: 5;
+} */
+
+.strategyWrapper .imgWrapper {
+  height: 19.1rem;
+  overflow: hidden;
+  border-radius: 1.6rem;
+}
+
+.strategyWrapper .card-image {
+  height: 100%;
   position: relative;
   z-index: 2;
 }
-.card-holder {
+
+.strategyWrapper .card {
   position: relative;
-  padding: 2.4rem 2.4rem 7.2rem 0rem;
+  padding: 2.4rem;
   z-index: 2;
+  box-shadow: 0px 0px 35px 0px #00000008;
+  border-radius: 1.6rem;
+  background-color: var(--white);
 }
-.card-label {
-  position: relative;
-  z-index: 2;
-}
-.blue-ornament {
-  z-index: 1;
+
+/* .strategyWrapper .card-label {
+
+} */
+
+.strategyWrapper .blue-ornament {
+  z-index: -1;
   position: absolute;
-  left: 45rem;
   height: 98rem;
   width: 110rem;
-  top: -9rem;
+  top: 0rem;
+  right: 0;
 }
-.orange-ornament {
-  z-index: 1;
+
+.strategyWrapper .orange-ornament {
+  z-index: -1;
   position: absolute;
-  left: 3rem;
-  top: -26rem;
+  left: 0;
+  bottom: 0;
   height: 90rem;
   width: 98rem;
-  /* bottom: 12rem; */
 }

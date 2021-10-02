@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+// import "./home.css";
 import Button from "./Button/Button";
 import DigiIcon from "../Icons/DigiIcon.svg";
 import arrows from "../Icons/arrows.svg";
@@ -33,16 +33,17 @@ import Brands from "./Brands/Brands";
 function Home() {
   return (
     <>
-      <Header headerCaption={`Fuel your online\nstore with\nincreased `} />
+      <Header headerCaption={`Fuel your online\nstore with\nincreased leads`} />
       <Offer
         offerCaption={` We help E-commerce businesses\nand a number of other\nenterprises
       across many sectors\namplify their digital presence,\nget more
       profitable conversions\nand boost their business\nrevenue.`}
       />
       <Strategy strategyText={`Strategy Process\nImplementation Results`} />
-      <Proof boostText={` We can similarly help\nyou boost your leads &\nconvert your
-      undecided\nprospects into active\nbuyers.`} />
-      <Review /> 
+      <Proof
+        mainCaption={` We can similarly help you boost your leads & convert your undecided prospects into active buyers.`}
+      />
+      <Review />
       <Process />
       <Figures />
       <Feedback />
@@ -134,7 +135,7 @@ function Home() {
         <p className="review-paragraph">
           Businesses and clients who trusted us to skyrocket their metrics
         </p> */}
-        {/* <div className="reviews-ratings">
+      {/* <div className="reviews-ratings">
           <div className="five-stars">
             <div className="logo-review">
               <div>
@@ -199,8 +200,8 @@ function Home() {
         </div> */}
       {/* </div> */}
       {/* <div className="team-services"> */}
-        {/* <h1 className="team-process">Our Process</h1> */}
-        {/* <div className="service-process">
+      {/* <h1 className="team-process">Our Process</h1> */}
+      {/* <div className="service-process">
           <div className="team-work-img">
             <img src={Team} alt="Team work" className="team" />
           </div>
