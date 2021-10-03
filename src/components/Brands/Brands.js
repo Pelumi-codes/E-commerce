@@ -1,22 +1,75 @@
+import styled from "styled-components";
 import Spacer from "components/Spacer";
-import "./Brands.css";
-import ReadArrow from "Images/ReadArrow.svg";
-import Line from "Images/Line.svg";
-import Button from "components/Button/Button";
+import arrowRight from "Images/ReadArrow.svg";
+
+const Wrapper = styled.div`
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+
+  .mainCaption {
+    .space {
+      display: none;
+    }
+  }
+
+  .readMore {
+    border-bottom: 1px solid;
+    width: max-content;
+
+    .arrow {
+      height: 2rem;
+    }
+  }
+
+  .brandName {
+    padding: 1.2rem 0.6rem;
+    background-color: var(--white);
+  }
+
+  @media screen and (max-width: 768px) {
+    .mainCaption {
+      br {
+        display: none;
+      }
+
+      .space {
+        display: inline;
+      }
+    }
+  }
+`;
+
+const ImpactCard = styled.div`
+  background-color: ${(props) => props.bg ?? "var(--primary)"};
+  color: ${(props) => props.color ?? "inherit"};
+`;
 
 const Brands = () => {
   return (
-    <div className="brandsWrapper container">
-      <p className="paragraphPercent  paddingTop textBoldSmall ">
-        See how we boosted Heroshe’s (a US-to-Nigeria shipping company) web
-        traffic by 1348%
+    <Wrapper className="container">
+      <p className="textLargeBold mainCaption">
+        See how we boosted Heroshe’s (a US-to-Nigeria shipping company)
+        <br />
+        <span>&nbsp;</span>
+        web traffic by 1348%
       </p>
-      <div className="read-arrow ">
-        <h5 className="read-percent textSmallBoldWeight flexRow">Read more</h5>
-        <img src={ReadArrow} alt="Arrow sign" className="read-percent" />
+      <Spacer y={1.2} />
+      <div className="readMore flexRow alignCenter">
+        <span className="read-percent textSmallBold">Read more</span>
+        <Spacer x={0.6} />
+        <img src={arrowRight} alt="Arrow right" className="arrow" />
       </div>
-      <img src={Line} alt="line" className="Line " />
-    </div>
+      <Spacer y={6} />
+      <div className="flexRow">
+        <ImpactCard>
+          <div className="flexRow justifyCenter alignCenter brandName">
+            <span className="textLargeBold">MYGSTZone</span>
+          </div>
+          <Spacer y={4.8} />
+          <p className=""></p>
+        </ImpactCard>
+      </div>
+    </Wrapper>
   );
 };
 

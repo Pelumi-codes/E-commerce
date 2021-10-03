@@ -134,6 +134,10 @@ ul {
   color: var(--white);
 }
 
+.colorPrimary {
+  color: var(--primary);
+}
+
 .backdrop.open {
   opacity: 1;
   pointer-events: all;
