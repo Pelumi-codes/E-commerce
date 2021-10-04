@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const Wrapper = styled.button`
@@ -17,7 +16,12 @@ const Wrapper = styled.button`
   width: max-content;
   background-color: ${(props) =>
     props.white ? "var(--white)" : "var(--primary)"};
-  color: ${(props) => (props.white ? "var(--primary)" : "var(--white)")};
+  color: ${(props) =>
+    props.color
+      ? props.color
+      : props.white
+      ? "var(--primary)"
+      : "var(--white)"};
 
   .text {
     font-size: 1.6rem;
@@ -25,46 +29,15 @@ const Wrapper = styled.button`
     line-height: 2rem;
     white-space: no-wrap;
     text-align: center;
-    padding: 18px 12px 18px 12px;
   }
 `;
 
-const Button = ({
-  className,
-  height,
-  text,
-  small,
-  big,
-  white,
-  type,
-  color,
-  background,
-}) => {
-  const styleProps = {
-    className,
-    text,
-    white,
-    small,
-    big,
-    height,
-    color,
-    background,
-    type,
-  };
-
+const Button = ({ text, ...props }) => {
   return (
-    <Wrapper {...styleProps}>
+    <Wrapper {...props}>
       <span className="text">{text}</span>
     </Wrapper>
   );
-};
-Button.propTypes = {
-  color: PropTypes.string,
-  text: PropTypes.string.isRequired,
-  className: PropTypes.string,
-  height: PropTypes.string,
-  type: PropTypes.string,
-  enable: PropTypes.string,
 };
 
 export default Button;

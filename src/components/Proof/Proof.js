@@ -16,7 +16,7 @@ const Wrapper = styled.div`
     padding-right: 0;
     background: transparent;
 
-    &::after {
+    &::before {
       content: "";
       height: 100%;
       width: 120%;
@@ -61,6 +61,7 @@ const Wrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    justify-content: unset;
     height: auto;
 
     .miniCard {
@@ -83,7 +84,7 @@ const Wrapper = styled.div`
 
 const Proof = ({ mainCaption }) => {
   return (
-    <Wrapper className="flexRow alignCenter sectionLarge">
+    <Wrapper className="flexRow alignCenter justifySpaceBetween sectionLarge">
       <div className="contentLeft container">
         <h2 className="displaySmallBold">
           Proof of
