@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import Star from "Images/Star.svg";
 import Team from "Images/Team.svg";
 import bullet from "Images/bullet.svg";
-import markbullet from "Images/markbullet.svg";
-import Button from "components/Button/Button";
+import Button from "components/Button";
 import Spacer from "components/Spacer";
 
 const Wrapper = styled.div`
@@ -65,7 +63,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const Process = () => {
+const Process = ({ step }) => {
   return (
     <Wrapper className="container">
       <h1 className="title displaySmall">Our Process</h1>
@@ -87,7 +85,7 @@ const Process = () => {
               </p>
             </div>
           </div>
-          <div className="process flexRow alignCenter">
+          {/* <div className="process flexRow alignCenter">
             <div>
               <img src={bullet} alt="Logo" className="bullet" />
             </div>
@@ -95,18 +93,18 @@ const Process = () => {
             <div className="">
               <p className="description">We provide general recommendations</p>
             </div>
-          </div>
-          <div className="process flexRow alignCenter">
-            <div>
-              <img src={bullet} alt="Logo" className="bullet" />
+          </div> */}
+          {step && (
+            <div className="process flexRow alignCenter">
+              <div>
+                <img src={bullet} alt="Logo" className="bullet" />
+              </div>
+              <Spacer x={0.8} />
+              <div className="">
+                <p className="description">{step}</p>
+              </div>
             </div>
-            <Spacer x={0.8} />
-            <div className="">
-              <p className="description">
-                We assess where you are with your business
-              </p>
-            </div>
-          </div>
+          )}
           <div className="process flexRow alignCenter">
             <div>
               <img src={bullet} alt="Logo" className="bullet" />

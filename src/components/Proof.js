@@ -1,6 +1,6 @@
 // import "./Proof.css";
 import styled from "styled-components";
-import Button from "components/Button/Button";
+import Button from "components/Button";
 import Spacer from "components/Spacer";
 
 const Wrapper = styled.div`
@@ -40,12 +40,13 @@ const Wrapper = styled.div`
     color: var(--primary_dark);
   }
 
-  .miniCard {
-    height: 36.1rem;
-    width: 36rem;
-    margin-top: 3rem;
-    background-color: #ffffff;
-  }
+  // .miniCard {
+  //   width: 50%;
+
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
 
   .proofWrapper .textLarge {
     margin-bottom: 15.5rem;
@@ -66,6 +67,10 @@ const Wrapper = styled.div`
 
     .miniCard {
       width: 100%;
+
+      img {
+        width: 100%;
+      }
     }
 
     .contentRight,
@@ -78,11 +83,15 @@ const Wrapper = styled.div`
       font-size: 32px;
       line-height: 48px;
       width: 100%;
+
+      br {
+        display: none;
+      }
     }
   }
 `;
 
-const Proof = ({ mainCaption }) => {
+const Proof = ({ mainCaption, description, image }) => {
   return (
     <Wrapper className="flexRow alignCenter justifySpaceBetween sectionLarge">
       <div className="contentLeft container">
@@ -92,16 +101,21 @@ const Proof = ({ mainCaption }) => {
           what we do
         </h2>
         <Spacer y={4.8} />
-        <div className="miniCard"></div>
+        <div className="miniCard">
+          <img src={image || "..."} alt="Data visual" />
+        </div>
         <Spacer y={7.2} />
-        <p className="textLarge">
-          MyGSTZone could barely generate more than
-          <br />
-          60 profitable leads monthly.
-        </p>
+        <p className="textLarge">{description}</p>
       </div>
       <div className="flexColumn alignEnd contentRight">
-        <p className="mainCaption textRight">{mainCaption}</p>
+        <p className="mainCaption textRight">
+          {mainCaption?.split("\n").map((item, index) => (
+            <span key={index}>
+              {item}
+              <br />
+            </span>
+          ))}
+        </p>
         <Spacer y={4.8} />
         <Button className="btn" text="Yes please, I want in!" />
       </div>

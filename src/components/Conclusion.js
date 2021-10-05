@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Button from "./Button/Button";
+import Button from "./Button";
 import Spacer from "./Spacer";
 
 const Wrapper = styled.div`
@@ -12,17 +12,38 @@ const Wrapper = styled.div`
     color: var(--white);
   }
 
+  .subText {
+    color: var(--white);
+  }
+
   @media screen and (max-width: 768px) {
     .conclusionText {
       width: 100%;
+
+      br {
+        display: none;
+      }
     }
   }
 `;
 
-const Conclusion = ({ text }) => {
+const Conclusion = ({ text, subText }) => {
   return (
     <Wrapper className="flexColumn alignCenter container">
-      <p className="textLargeBold textCenter conclusionText">{text}</p>
+      <p className="textLargeBold textCenter conclusionText">
+        {text?.split("\n").map((item) => (
+          <span>
+            {item}
+            <br />
+          </span>
+        ))}
+      </p>
+      {subText && (
+        <>
+          <Spacer y={2.4} />
+          <p className="textSmall subText">...{subText}</p>
+        </>
+      )}
       <Spacer y={4.8} />
       <Button
         as="a"

@@ -1,10 +1,16 @@
 import styled from "styled-components";
-import Button from "./Button/Button";
-import Spacer from "./Spacer";
 
 const Wrapper = styled.div`
   padding-top: 3.6rem;
   padding-bottom: 3.6rem;
+
+  .footerLink {
+    margin-right: 2.4rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
@@ -24,6 +30,7 @@ const Wrapper = styled.div`
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 1.2rem;
+      margin-right: 0;
     }
   }
 `;

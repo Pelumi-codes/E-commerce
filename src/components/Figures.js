@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   }
 
   .metricValue {
+    color: var(--primary_dark);
     font-size: 64px;
     line-height: 64px;
     margin-bottom: 0.8rem;
@@ -60,20 +61,18 @@ const Figures = () => {
         <div>
           <h1 className="metricValue">189,000+</h1>
           <h4 className="textLarge textCenter metricDescription">
-            connections
+            Conversions
           </h4>
         </div>
         <div>
           <h1 className="metricValue">11,323,000+</h1>
           <h4 className="textLarge textCenter metricDescription">
-            connections
+            Impressions
           </h4>
         </div>
         <div>
           <h1 className="metricValue">5+</h1>
-          <h4 className="textLarge textCenter metricDescription">
-            connections
-          </h4>
+          <h4 className="textLarge textCenter metricDescription">Continents</h4>
         </div>
       </div>
       <Spacer y={12.8} yMobile={3.2} />
@@ -85,14 +84,12 @@ const Figures = () => {
         <div>
           <h1 className="metricValue">1,817,400+</h1>
           <h4 className="textLarge textCenter metricDescription">
-            connections
+            Website visits
           </h4>
         </div>
         <div>
           <h1 className="metricValue">22+</h1>
-          <h4 className="textLarge textCenter metricDescription">
-            connections
-          </h4>
+          <h4 className="textLarge textCenter metricDescription">Industries</h4>
         </div>
       </div>
     </Wrapper>

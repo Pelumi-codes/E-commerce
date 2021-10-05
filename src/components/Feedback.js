@@ -57,6 +57,10 @@ const Wrapper = styled.div`
 
     .col {
       margin: 1.2rem;
+
+      &.lg {
+        display: none;
+      }
     }
 
     .mainCaption {
@@ -104,31 +108,31 @@ const Feedback = () => {
             className="logo"
           />
         </div>
-        <div className="col">
+        <div className="col lg">
           <img src={ts_elimination} alt="TS ELIMINATION" className="logo" />
         </div>
 
         {/* slide 2 */}
-        <div className="col">
+        <div className="col lg">
           <img
             src={johnsona_furniture}
             alt="JOHNSONA FURNITURE"
             className="logo"
           />
         </div>
-        <div className="col">
+        <div className="col lg">
           <img src={hospitality_hub} alt="HOSPITALITY HUB" className="logo" />
         </div>
-        <div className="col">
+        <div className="col lg">
           <img src={heroshe} alt="HEROSHE" className="logo" />
         </div>
-        <div className="col">
+        <div className="col lg">
           <img src={industry_search} alt="INDUSTRY SEARCH" className="logo" />
         </div>
-        <div className="col">
+        <div className="col lg">
           <img src={future_net} alt="FUTURE NET" className="logo" />
         </div>
-        <div className="col">
+        <div className="col lg">
           <img
             src={pro_seduction}
             alt="PROFESSIONAL SEDUCTION"
