@@ -28,6 +28,7 @@ function E_commerce() {
       <Offer
         offerCaption={`We help E-commerce businesses\nand a number of other \nenterprises across many sectors \namplify their digital presence,\nget more profitable conversions \nand boost their business\nrevenue.`}
         image={ecommerce_offer}
+        text={`Get Started`}
       />
       <Strategy strategyText={`Strategy Process\nImplementation Results`} />
       <Proof

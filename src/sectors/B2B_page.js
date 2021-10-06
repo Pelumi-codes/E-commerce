@@ -10,33 +10,32 @@ import Feedback from "../components/Feedback";
 import Brands from "../components/Brands";
 import Conclusion from "../components/Conclusion";
 import Footer from "../components/Footer";
-import percentage from "Images/percentage.svg";
+import leadsGrowth from "Images/leadsGrowth.jpg";
 import B2C_offer from "Images/offer/B2C_offer.jpg";
 import B2C_header from "Images/header/B2C_header.jpg";
 import B2C_header_mobile from "Images/header/B2C_header_mobile.jpg";
 
-function B2C_general() {
+function B2B_page() {
   return (
     <>
       <Header
-        headerCaption={`49% of customers say they \nuse google to find a new \nproduct or service`}
-        subText={`The question is, will your customers find you when they do a search? Let’s Get You Seen`}
+        headerCaption={`To generate higher-quality prospects, \nmore than 49% of B2B companies are \nemploying more sophisticated content \ncreation & marketing tactics.`}
+        subText={` …and we can help you do just that!`}
         image={B2C_header}
         imageMobile={B2C_header_mobile}
         logoLight
         getStartedLight
       />
       <Offer
-        offerCaption={`Increasing your \nmarketing budget isn't \nall you need to appear \non Google's first page`}
-        subText="It's how your marketing strategy is implemented and monitored that gets you results."
+        offerCaption={`Imagine the possibility of \ntripling your revenue growth \nsimply because you have a \nkiller digital marketing \nstrategy!`}
         image={B2C_offer}
-        text={`Request a free consultation`}
+        text={`Get Started`}
       />
       <Strategy strategyText={`Strategy Process\nImplementation Results`} />
       <Proof
-        mainCaption={`We can similarly help \nyou reach a wider \naudience \nin record time!`}
-        description="A tailored marketing strategy we developed & implemented for Anike Naturals boosted their online reach as we helped them supersede their initial expected leads by 380%."
-        image={percentage}
+        mainCaption={` We can similarly help \nyou boost your leads & \nconvert your undecided \nprospects into active \nclients.`}
+        description="We developed & implemented a strategy for MYGSTZONE which gave the business a whopping 900% increase in leads in just one month!"
+        image={leadsGrowth}
       />
       <Review />
       <Process step="We assess where you are with your business" />
@@ -45,16 +44,16 @@ function B2C_general() {
       <Brands
         caseStudyText={`See how we increased Anike Naturals’ initial lead expectation by \n380% and generated over 14,000 clicks in just one month`}
         caseStudyLink="/anike-natural"
-        brand1="MYGSTZone"
+        brand1="ANIKE"
         brand2="HEROSHE"
       />
       <Conclusion
-        text={`We can also help you drive more\n conversions to boost your business sales.`}
-        subText="Let's get to work"
+        text={`It's not just about crafting a marketing strategy. It's about \nimplementing a tailored marketing strategy that helps your business \nstay miles ahead`}
+        subText="…and also convert undecided prospects to paying customers."
       />
       <Footer />
     </>
   );
 }
 
-export default B2C_general;
+export default B2B_page;
