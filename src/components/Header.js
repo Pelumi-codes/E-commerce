@@ -169,8 +169,8 @@ const Header = ({
       </div>
       <Spacer y={7.2} yMobile={12} />
       <h1 className={`headerCaption${textDark ? "" : " colorWhite"}`}>
-        {headerCaption.split(`\n`).map((text) => (
-          <span>
+        {headerCaption?.split(`\n`).map((text, index) => (
+          <span key={index}>
             {text}
             <br />
           </span>
@@ -182,8 +182,8 @@ const Header = ({
           textDark ? "" : " colorWhite"
         } headerDescription`}
       >
-        {subText.split(`\n`).map((text) => (
-          <span>
+        {subText?.split(`\n`).map((text, index) => (
+          <span key={index}>
             {text}
             <br />
           </span>
