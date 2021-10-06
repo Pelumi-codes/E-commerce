@@ -10,33 +10,33 @@ import Brands from "../components/Brands";
 import Conclusion from "../components/Conclusion";
 import Footer from "../components/Footer";
 import leadsGrowth from "Images/leadsGrowth.jpg";
-import Health_offer from "Images/offer/Health_offer.jpg";
-import Offer from "../components/offer";
+import Fintech_header from "Images/header/Fintech_header.jpg";
+import Offer from "components/offer";
 
-const HEALTH_sector = () => {
+const FINTECH_page = () => {
   return (
     <>
       <Header
         brand
         getStartedLight
         textDark
-        headerCaption={`84% of patients use \nonline sources for \nhospital research & 44% \n of these later schedule a \nhospital appointment.`}
-        subText={`The question is, can prospective customers find \nyour business when they search for you? `}
-        image={Health_offer}
+        headerCaption={`Get front seat in a \nfiercely competitive \nfintech marketplace`}
+        subText={`Imagine the possibility of tripling your user base simply because \nyou have a killer digital marketing tactic!  `}
+        image={Fintech_header}
         imageRight
       />
       <Offer
-        offerCaption={`We can help you map out a profitable healthcare marketing strategy – One that converts potential patients into a paying base.`}
+        offerCaption={`There's no shortage of potential ways to market your fintech services to a teeming pool of customers looking to use your services. `}
         text={`Let’s show you how`}
       />
       <Strategy strategyText={`Strategy Process\nImplementation Results`} />
       <Proof
-        mainCaption={` We can similarly help you boost your leads & convert your undecided prospects into active patients.`}
+        mainCaption={` We can similarly help you boost your leads & convert your undecided prospects into active customers.`}
         description="MyGSTZone could barely generate more than 60 profitable leads monthly."
         image={leadsGrowth}
       />
       <Review />
-      <Process step="We assess where you are with your healthcare business " />
+      <Process step="We assess where you are with your business " />
       <Figures />
       <Feedback />
       <Brands
@@ -46,11 +46,12 @@ const HEALTH_sector = () => {
         brand2="MYGSTZone"
       />
       <Conclusion
-        text={`It's not just about crafting a marketing strategy. It's about \nimplementing a tailored marketing strategy that helps your healthcare \nbusiness stay miles ahead of the pack.`}
+        text={`It's not just about crafting a marketing strategy. It's about \nimplementing a tailored marketing strategy that helps you stay miles \nahead of your competitors in the fintech space`}
+        subText="…and also convert undecided prospects to paying customers!."
       />
       <Footer />
     </>
   );
 };
 
-export default HEALTH_sector;
+export default FINTECH_page;

@@ -30,6 +30,7 @@ const AUTO_mobile = () => {
       <Offer
         offerCaption={`Get front seat in a fiercely \ncompetitive online automobile \nmarketplace with a tailored \nmarketing strategy we will \ncreate and implement to boost \nyour car sales.`}
         image={Auto_offer}
+        text={`Get Started`}
       />
       <Strategy strategyText={`Strategy Process\nImplementation Results`} />
       <Proof

@@ -13,6 +13,7 @@ import LAW_firms from "sectors/LAW_firms";
 import LogisticsAnd_Shipping from "sectors/LogisticsAnd_Shipping";
 import E_commerce from "./sectors/E_commerce";
 import REAL_estate from "./sectors/REAL_estate";
+import FINTECH_page from "./sectors/FINTECH_page";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           />
           <Route exact path="/AUTO-mobile" component={AUTO_mobile} />
           <Route exact path="/B2B-page" component={B2B_page} />
+          <Route exact path="/FINTECH-page" component={FINTECH_page} />
         </Switch>
       </div>
     </Router>

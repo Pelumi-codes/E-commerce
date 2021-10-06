@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 
   .mainCaption {
     font-family: var(--font_extra_bold);
-    font-size: 56px;
+    font-size: 48px;
     line-height: 72px;
     width: 66.8rem;
     color: var(--primary_dark);

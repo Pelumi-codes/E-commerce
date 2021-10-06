@@ -1,5 +1,5 @@
 import React from "react";
-import Offer from "../components/offer";
+import Header from "../components/Header";
 import Strategy from "../components/Strategy";
 import Proof from "../components/Proof";
 import Review from "../components/Review";
@@ -15,10 +15,14 @@ import Logistics_offer from "Images/offer/Logistics_offer.jpg";
 const LogisticsAnd_Shipping = () => {
   return (
     <>
-      <Offer
-        offerCaption={`65% of people looking \nto ship parcels will use a \nshipping company that \nturns up on Google's \nfirst page search.`}
-        subText="The question is, can prospective customers find your business when they search for you? "
+      <Header
+        brand
+        getStartedLight
+        textDark
+        headerCaption={`65% of people looking \nto ship parcels will use a \nshipping company that \nturns up on Google's \nfirst page search.`}
+        subText={`The question is, can prospective customers find \nyour business when they search for you? `}
         image={Logistics_offer}
+        imageRight
       />
       <Strategy strategyText={`Strategy Process\nImplementation Results`} />
       <Proof

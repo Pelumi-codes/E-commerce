@@ -30,6 +30,7 @@ function B2C_general() {
         offerCaption={`Increasing your \nmarketing budget isn't \nall you need to appear \non Google's first page`}
         subText="It's how your marketing strategy is implemented and monitored that gets you results."
         image={B2C_offer}
+        text={`Request a free consultation`}
       />
       <Strategy strategyText={`Strategy Process\nImplementation Results`} />
       <Proof

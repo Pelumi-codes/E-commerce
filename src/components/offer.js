@@ -79,7 +79,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const offer = ({ offerCaption, subText, image }) => {
+const offer = ({ offerCaption, subText, image, text }) => {
   return (
     <Wrapper
       className={`container section flexRow alignCenter justifySpaceBetween${
@@ -98,7 +98,7 @@ const offer = ({ offerCaption, subText, image }) => {
         <Spacer y={2.4} />
         {subText && <p className="textMedium subText">{subText}</p>}
         <Spacer y={2.4} />
-        <Button className="btn" text="Request a free consultation" big />
+        <Button className="btn" text={text} big />
       </div>
       {image && (
         <div className="offerImage">

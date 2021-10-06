@@ -28,10 +28,11 @@ const REAL_estate = () => {
       <Offer
         offerCaption={`Your digital marketing \napproach can go ahead of you \nto speak for what your business \ndoes even before your clients \never decide to contact you!`}
         image={realEstate_offer}
+        text={`Let’s get you seen`}
       />
       <Strategy strategyText={`Strategy Process\nImplementation Results`} />
       <Proof
-        mainCaption={` Whether you're seeking to help people buy or sell properties, we can help you skyrocket your leads & convert undecided clients into paying clients.`}
+        mainCaption={` Whether you're seeking to \nhelp people buy or sell \nproperties, we can help you \nskyrocket your leads & \nconvert undecided clients into paying clients.`}
         description="MyGSTZone could barely generate more than 60 profitable leads monthly."
         image={leadsGrowth}
       />

@@ -29,6 +29,7 @@ function B2B_page() {
       <Offer
         offerCaption={`Imagine the possibility of \ntripling your revenue growth \nsimply because you have a \nkiller digital marketing \nstrategy!`}
         image={B2C_offer}
+        text={`Get Started`}
       />
       <Strategy strategyText={`Strategy Process\nImplementation Results`} />
       <Proof

@@ -14,7 +14,8 @@ const Wrapper = styled.div`
   .coverImage {
     position: absolute;
     z-index: -1;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -22,6 +23,7 @@ const Wrapper = styled.div`
       transform: unset;
       left: unset;
       right: 0;
+      min-width: unset;
     }
 
     &.mobile {
@@ -79,7 +81,7 @@ const Wrapper = styled.div`
     }
 
     .headerCaption {
-      font-size: 3.6rem;
+      font-size: 3.2rem;
       line-height: 4.8rem;
       text-align: center;
 

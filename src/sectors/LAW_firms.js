@@ -30,6 +30,7 @@ const LAW_firms = () => {
         offerCaption={`We help E-commerce businesses\nand a number of other \nenterprises across many sectors \namplify their digital presence,\nget more profitable conversions \nand boost their business\nrevenue.`}
         subText="This alone, can skyrocket the number of high-quality clients you can convert into paying clients! "
         image={lawFirm_offer}
+        text={`Let’s show you how`}
       />
       <Strategy strategyText={`Strategy Process\nImplementation Results`} />
       <Proof
