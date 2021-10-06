@@ -1,3 +1,4 @@
+import ContactUs from "pages/ContactUs";
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -20,6 +21,8 @@ function App() {
           />
           <Route exact path="/e-commerce" component={E_commerce} />
           <Route exact path="/B2C-general" component={B2C_general} />
+
+          <Route path="/consultation/contact-us" component={ContactUs} />
         </Switch>
       </div>
     </Router>
