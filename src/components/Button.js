@@ -5,7 +5,7 @@ const Wrapper = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0px 4px 4px rgba(0, 45, 255, 0.04);
+  // box-shadow: 0px 4px 4px rgba(0, 45, 255, 0.04);
   border-radius: 0.4rem;
   align-items: center;
   border: none;
@@ -13,7 +13,7 @@ const Wrapper = styled.button`
   outline: none;
   height: ${(props) =>
     props.small ? "4.8rem" : props.big ? "5.6rem" : "4.8rem"};
-  width: max-content;
+  width: ${(props) => (props.fullWidth ? "100%" : "max-content")};
   background-color: ${(props) =>
     props.white ? "var(--white)" : "var(--primary)"};
   color: ${(props) =>

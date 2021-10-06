@@ -1,3 +1,4 @@
+import ContactUs from "pages/ContactUs";
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -38,6 +39,7 @@ function App() {
           <Route exact path="/AUTO-mobile" component={AUTO_mobile} />
           <Route exact path="/B2B-page" component={B2B_page} />
           <Route exact path="/FINTECH-page" component={FINTECH_page} />
+          <Route path="/consultation/contact-us" component={ContactUs} />
         </Switch>
       </div>
     </Router>
